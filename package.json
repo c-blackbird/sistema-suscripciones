@@ -1,0 +1,22 @@
+{
+  "name": "sistema-suscripciones",
+  "version": "1.0.0",
+  "description": "subscription and billing management system",
+  "main": "dist/Index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/Index.js",
+    "dev": "nodemon --exec ts-node src/Index.ts",
+    "clean": "if exist dist rmdir /s /q dist"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/uuid": "^9.0.0",
+    "nodemon": "^3.0.0",
+    "ts-node": "^10.9.0",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "uuid": "^9.0.0"
+  }
+}
